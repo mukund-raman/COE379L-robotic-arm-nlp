@@ -1,0 +1,8 @@
+path: /code/COE379L/projects/COE379L-robotic-arm-nlp/data
+train: candy-split/train/images
+val: candy-split/test/images
+
+nc: 11
+
+names: ["MMs_peanut", "MMs_regular", "airheads", "gummy_worms", "milky_way", "nerds", "skittles", "snickers", "starbust", 
+"three_musketeers", "twizzlers"]

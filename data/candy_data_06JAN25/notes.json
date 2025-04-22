@@ -1,0 +1,53 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "MMs_peanut"
+    },
+    {
+      "id": 1,
+      "name": "MMs_regular"
+    },
+    {
+      "id": 2,
+      "name": "airheads"
+    },
+    {
+      "id": 3,
+      "name": "gummy_worms"
+    },
+    {
+      "id": 4,
+      "name": "milky_way"
+    },
+    {
+      "id": 5,
+      "name": "nerds"
+    },
+    {
+      "id": 6,
+      "name": "skittles"
+    },
+    {
+      "id": 7,
+      "name": "snickers"
+    },
+    {
+      "id": 8,
+      "name": "starbust"
+    },
+    {
+      "id": 9,
+      "name": "three_musketeers"
+    },
+    {
+      "id": 10,
+      "name": "twizzlers"
+    }
+  ],
+  "info": {
+    "year": 2024,
+    "version": "1.0",
+    "contributor": "Label Studio"
+  }
+}
