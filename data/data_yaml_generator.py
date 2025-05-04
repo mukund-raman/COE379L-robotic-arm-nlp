@@ -32,8 +32,8 @@ def create_data_yaml(path_to_classes_txt, path_to_data_yaml):
     # Get the directory of the second part and append train/images and test/images
     base_path = split_parts[0] + 'data'
     relative_path = split_parts[1]
-    train_path = os.path.join(os.path.dirname(relative_path), 'train/images')
-    val_path = os.path.join(os.path.dirname(relative_path), 'test/images')
+    train_path = os.path.join(os.path.dirname(relative_path), 'train/images')[1:]
+    val_path = os.path.join(os.path.dirname(relative_path), 'test/images')[1:]
     
     # Create data dictionary
     data = {
