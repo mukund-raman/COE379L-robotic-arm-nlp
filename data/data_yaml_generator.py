@@ -1,10 +1,11 @@
-# Code retrieved from Edje Electronics's Tutorial on Working with YOLO Models,
+# Code retrieved from Edje Electronics' Tutorial on Working with YOLO Models,
 # but slightly modified to meet our needs:
 # https://github.com/EdjeElectronics/Train-and-Deploy-YOLO-Models
 
 # Python function to automatically create data.yaml config file
 # 1. Reads "classes.txt" file to get list of class names
-# 2. Creates data dictionary with correct paths to folders, number of classes, and names of classes
+# 2. Creates data dictionary with correct paths to folders, number of classes,
+#    and names of classes
 # 3. Writes data in YAML format to data.yaml
 
 import yaml
@@ -13,7 +14,8 @@ import os
 def create_data_yaml(path_to_classes_txt, path_to_data_yaml):
     # Read class.txt to get class names
     if not os.path.exists(path_to_classes_txt):
-        print(f'classes.txt file not found! Please create a classes.txt labelmap and move it to {path_to_classes_txt}')
+        print(f'classes.txt file not found! Please create a classes.txt \
+            labelmap and move it to {path_to_classes_txt}')
         return
     with open(path_to_classes_txt, 'r') as f:
         classes = []
@@ -29,11 +31,11 @@ def create_data_yaml(path_to_classes_txt, path_to_data_yaml):
         print(f"Error: 'data' not found in the path {split_dir}")
         return
     
-    # Get the directory of the second part and append train/images and test/images
+    # Get the directory of 2nd part and append train/images and test/images
     base_path = split_parts[0] + 'data'
-    relative_path = split_parts[1]
-    train_path = os.path.join(os.path.dirname(relative_path), 'train/images')[1:]
-    val_path = os.path.join(os.path.dirname(relative_path), 'test/images')[1:]
+    rel_path = split_parts[1]
+    train_path = os.path.join(os.path.dirname(rel_path), 'train/images')[1:]
+    val_path = os.path.join(os.path.dirname(rel_path), 'test/images')[1:]
     
     # Create data dictionary
     data = {
