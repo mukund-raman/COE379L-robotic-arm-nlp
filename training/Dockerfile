@@ -7,7 +7,9 @@ RUN apt-get update && apt-get install -y libgl1 libglib2.0-0
 RUN pip install --upgrade pip
 RUN pip install flask ultralytics opencv-python numpy
 
-COPY ./runs/detect/train17/weights/best.pt /yolov11.pt
+COPY ./runs/detect/train/weights/best.pt /yolov11-candy.pt
+COPY ./runs/detect/train2/weights/best.pt /yolov11-bottle.pt
+COPY ./runs/detect/train3/weights/best.pt /yolov11-coin.pt
 COPY api.py /api.py
 
 CMD ["python", "api.py"]

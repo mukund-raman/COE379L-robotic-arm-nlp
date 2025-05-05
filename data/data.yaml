@@ -1,6 +1,9 @@
 path: /home/motionprediction/.vscode/extensions/COE379L-robotic-arm-nlp/data
-train: coco_data-split/train/images
-val: coco_data-split/test/images
-nc: 1
+train: YOLO_coin_data_12DEC30-split/train/images
+val: YOLO_coin_data_12DEC30-split/test/images
+nc: 4
 names:
-- bottle
+- penny
+- nickel
+- dime
+- quarter
