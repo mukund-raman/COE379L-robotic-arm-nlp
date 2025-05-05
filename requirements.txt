@@ -110,3 +110,6 @@ wheel==0.45.1
 zipp
 zstandard
 fiftyone
+flask
+opencv-python-headless
+docker
