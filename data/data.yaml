@@ -1,16 +1,6 @@
 path: /home/motionprediction/.vscode/extensions/COE379L-robotic-arm-nlp/data
-train: candy_data_06JAN25-split/train/images
-val: candy_data_06JAN25-split/test/images
-nc: 11
+train: coco_data-split/train/images
+val: coco_data-split/test/images
+nc: 1
 names:
-- MMs_peanut
-- MMs_regular
-- airheads
-- gummy_worms
-- milky_way
-- nerds
-- skittles
-- snickers
-- starburst
-- three_musketeers
-- twizzlers
+- bottle

@@ -109,3 +109,4 @@ wcwidth
 wheel==0.45.1
 zipp
 zstandard
+fiftyone

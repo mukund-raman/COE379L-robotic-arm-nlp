@@ -1,0 +1,4 @@
+names:
+  0: bottle
+path: /home/motionprediction/.vscode/extensions/COE379L-robotic-arm-nlp/data/coco_data
+train: ./images/train/
